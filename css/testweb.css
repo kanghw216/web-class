@@ -1,0 +1,24 @@
+.oblivion_yellow {
+    color:rgb( 255, 239, 35)
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+td, th {
+    width: 700;
+    height: 100;
+    border-bottom: 2px solid whitesmoke;
+    color:rgb( 255, 239, 35)
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 18px;
+}

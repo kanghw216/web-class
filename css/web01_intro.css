@@ -1,0 +1,37 @@
+body {
+    background-color : ivory;
+}
+
+* {
+font-family: '필기체';
+}
+
+
+.accent {
+    background-color: white;
+}
+
+#margin_top {
+    margin-top: 60px;
+    color: blue !important;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#margin_top {
+    color: red;
+}
+
+.licence {
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+#profile {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+

@@ -1,0 +1,24 @@
+li {
+    color: gray;
+}
+
+table {
+    border-collapse: collapse; /* 간격을 없애고 다 연결시켜줌 */
+    border: 2px solid black;
+}
+
+td, th {
+    width: 100px;
+    height: 30px;
+    /* font-size: 18px; */
+    /* border : 1px solid gray; */
+    border-bottom: 2px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    background-color: yellow;
+}

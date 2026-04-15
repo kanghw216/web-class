@@ -30,7 +30,7 @@ h1 {
 .image {
   width: 200px;
   height: 200px;
-  border: 1px dotted gray;
+  border: 1px solid gray;
   /* border-style: dashed dotted; */
   /* border-top-style: dashed; */
   /* border-color:red orange  ; */
@@ -40,7 +40,8 @@ h1 {
   /* border-top-left-radius: 20px; */
   margin: 0px auto;
   padding: 10px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke;
+  background-size: cover; */
 }
 
 
@@ -65,17 +66,38 @@ h1 {
 }
 
 #cleancode_img {
-  background-clip: border-box;
+  /* background-clip: border-box; */
+  background: url(../images/cleancode.jpg);
+  background-size: cover;
+  /* background-origin: border-box;
+  background-repeat: no-repeat; */
+  
 }
 
 #yibangin_img {
-  background-clip: padding-box;
+  /* background-clip: padding-box; */
+  background: url(../images/YibangIn.jpg);
+  background-size: cover;
+  /* background-origin: padding-box;
+  background-repeat: no-repeat; */
 }
 
 #tenThink_img {
-  background-clip: content-box;
+  /* background-clip: content-box; */
+  background: url(../images/tenThink.jpg);
+  background-size: cover;
+  /* background-origin: padding-box;
+  background-repeat: no-repeat; */
 }
 
-#main {
-  background-image: url("../images/java.png");
+/* #main {
+  background: url("../images/java.png") no-repeat 30% 20% fixed ;
+  background-size:;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 20% 30%;
+} */
+
+.book_dec {
+  font-size: 14px;
 }

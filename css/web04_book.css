@@ -20,11 +20,25 @@ h1 {
   width: 300px;
   height: 400px;
   border: 1px solid #C1C6C8;
-  margin: 20px auto;
+  margin: 20px;
   padding: 10px;
   box-sizing: content-box;
   box-shadow: 3px 3px 5px 3px #C1C6C8;
   border-radius: 20px;
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+.section1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: content-box;
+  box-shadow: 3px 3px 5px 3px #C1C6C8;
+  border-radius: 50%;
 }
 
 .image {
@@ -46,18 +60,27 @@ h1 {
 
 
 
-/* #cleancode {
-  margin: 10px 20px;
+#cleancode {
+  /* margin: 10px 20px; */
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+  /* float: left; */
 }
 
 #yibangin {
-  margin:10px 20px 30px;
+  /* margin:10px 20px 30px; */
+  background: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+  /* float: left; */
 }
 
 #tenThink {
-  margin: 10px 20px 30px 40px;
-} */
+  /* margin: 10px 20px 30px 40px; */
+  background: linear-gradient(to right bottom, rgb(20, 148, 246),rgb(255, 250, 187));
+  /* clear: both; */
+}
 
+#grad_test {
+  background: radial-gradient(circle at 30% 30% , white, blue)
+}
 
 .book_title {
   text-align: center;
@@ -98,6 +121,50 @@ h1 {
   background-position: 20% 30%;
 } */
 
+#main {
+  text-align: center;
+}
+
 .book_dec {
   font-size: 14px;
+}
+
+#nav > ul {
+  list-style: none;
+}
+
+#nav ul li {
+  display: inline-block;
+  border: 1px solid black;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#nav {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+/* #nav a:link {
+  background-color: #C1C6C8;
+}
+#nav a:visited {
+  background-color: yellow;
+} */
+
+#nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+#nav a:active {
+  background-color: yellow;
+  color: white;
 }

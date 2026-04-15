@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이상적인 티켓</title>
+  <link rel="stylesheet" href="../css/test02_ticket.css">
+</head>
+<body>
+
+
+<div id="head">
+    <h1>Ideal Ticket</h1>
+    <div id="nav">
+      <ul>
+        <li><a href = "../html/test02_ticket.html#musical" target="_blank">뮤지컬</a></li>
+        <li><a href = "../html/test02_ticket.html#concert" target="_blank">콘서트</a></li>
+        <li><a href = "../html/test02_ticket.html#play" target="_blank">연극</a></li>
+        <li><a href = "../html/test02_ticket.html#exhibition" target="_blank">전시</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="text-align: left;">
+  <p style="font-size: 30px; font-weight: bold; margin-bottom: 20px;">
+  <p class="title" style="text-align: left; font-weight: bold;">뮤지컬 데스노트(The Musical Death Note)</p>
+  </p>
+  
+  <img src="../images/mu_death.gif" alt="deathNote" 
+       style="width: 400px; display: block; border-radius: 10px; margin-left: 20px; float:left; margin-right: 30px;">
+</div>
+
+
+<div style="float:left; margin-right:200px">
+  <p id="view">장소</p>
+  <p id="info">디큐브 링크아트센터</p>
+
+  <p id="view">공연기간</p>
+  <p id="info">2025.10.14 ~ 2026.05.25</p>
+
+  <p id="view">공연시간</p>
+  <p id="info">165분(인터미션 20분 포함)</p>
+
+  <p id="view">관람연령</p>
+  <p id="info">14세 이상 관람가</p>
+
+  <p id="view">가격</p>
+  <p id="info">VIP석 170,000원</p>
+  <p id="info">R석 140,000원</p>
+  <p id="info">S석 110,000원</p>
+  <p id="info">A석 80,000원</p>
+</div>
+
+<div>
+  <form>
+    <fieldset>
+      <legend>예약 정보</legend>
+      <label>예매 상품 <input type="text" size="40" value="뮤지컬 데스노트(The Musical Death Note)" required></label><br>
+      <label>예매자 성명 <input type="text" size="10" required></label><br>
+      <label>예매자 연락처 <input type="text" size="30" placeholder="010-1234-5678" required></label><br>
+      <label>좌석 등급
+        <select size="1">
+          <option value="VIP" selected>VIP석</option>
+          <option value="R">R석</option>
+          <option value="S">S석</option>
+          <option value="A">A석</option>
+        </select>
+      </label><br>
+
+      <label>예매 수량 <input type="text" size="2" required></label>
+    </fieldset>
+
+    <button type="submit" style="margin-right:94.1px; margin-top:15px;">예약하기</button>
+    <button type="reset">취소하기</button>
+  </form>
+</div>
+
+</body>
+</html>

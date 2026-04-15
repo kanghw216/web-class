@@ -102,3 +102,7 @@ button {
 [type = "range"] {
     accent-color: rgb(207, 107, 0);
 }
+
+#name:focus, #tel:focus {
+    background-color: gray;
+}

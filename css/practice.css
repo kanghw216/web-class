@@ -1,24 +1,62 @@
-li {
-    color: gray;
+body {
+  background-color: #222222;
+  margin: 0%;
+  padding: 0%;
 }
 
-table {
-    border-collapse: collapse; /* 간격을 없애고 다 연결시켜줌 */
-    border: 2px solid black;
+.section {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: content-box;
 }
 
-td, th {
-    width: 100px;
-    height: 30px;
-    /* font-size: 18px; */
-    /* border : 1px solid gray; */
-    border-bottom: 2px solid black;
+.menu_bar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  box-sizing: border-box; /*테두리와 패팅을 너비에 포함 */
+  display: flex;
+  position: fixed;
+
 }
 
-td {
-    text-align: center;
+#orderList {
+  position: absolute;
+  top: 10%;
+  left: 70%;   
+  border-radius: 20px;
+
+  width: 400px;
+  height: 650px;
+  border: 1px solid #C1C6C8; 
+  box-shadow: 0px 1px 9px 5px #2898ee;
 }
 
-th {
-    background-color: yellow;
+#make_order {
+  position: absolute;
+  top: 81.8%;
+  left: 52%;
+  
+  width: 230px;
+  height: 70px;
+  border-radius: 20px;
+  border: 1px solid #C1C6C8; 
+  /* box-shadow: 0px 1px 7px 1px #2898ee; */
+  box-shadow: 0px 1px 9px 2px #2898ee;
+}
+
+#get_order {
+  position: absolute;
+  top: 68.8%;
+  left: 52%;
+  
+  width: 230px;
+  height: 70px;
+  border-radius: 20px;
+  border: 1px solid #C1C6C8; 
+  /* box-shadow: 0px 1px 7px 1px #2898ee; */
+  box-shadow: 0px 1px 9px 2px #2898ee;
 }

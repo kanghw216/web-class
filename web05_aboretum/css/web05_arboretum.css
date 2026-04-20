@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'SongamLeeHyeongSik';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2604-1@1.0/SongamIhyeongsik-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  font-family: SongamLeeHyeongSik;
+  margin: 10px;
+}
+
+#logo {
+  width: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  line-height: 40px;
+}
+
+nav ul {
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+nav>ul>li {
+  position:relative
+}
+
+.submenu {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  background-color: white;
+}
+
+nav ul li:hover .submenu{
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: #C1C6C8;
+}
+
+a {
+  text-decoration: none;
+  color:black; /* 링크 파란색 밑줄, 파란색 글씨 바꾸기 */
+  display: block;
+}
+
+li {
+  font-size: 17px;
+  width: 200px;
+  height: 40px;
+}
+
+#main_img {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/mainimg.jpg);
+  background-size: cover;
+  position: relative;
+  
+}
+
+#main_title {
+  font-size: 34px;
+  position: absolute;
+  /* bottom: 200px;
+  right: 100px; */
+  /* left:60px;
+  top:340px; */
+  left: 70px;
+  bottom: 70px;
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: bold
+}
+
+footer {
+  width: 100%;
+  height: 130px;
+  background-color: #C1C6C8;
+  color: black;
+  
+}
+
+.card {
+  width: 100%;
+  height: 760px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.part {
+  width: 450px;
+  height: 640px;
+  background-color: #C1C6C8;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+.small_title {
+  padding-top: 200px;
+  font-size: 40px;
+
+  font-weight: bold;
+  color: white
+}
+
+.small_info {
+  padding-top: 70px;
+  font-size: 20px;
+
+  font-weight: 600;
+  color: white;
+}
+
+#bg2 {
+  background-image: url(../images/bg02.jpg);
+  background-size: cover;
+}
+
+#bg3 {
+  background-image: url(../images/bg03.jpg);
+  background-size: cover;
+}
+
+#bg4 {
+  background-image: url(../images/bg04.jpg);
+  background-size: cover;
+}
+
+.part:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-blend-mode: multiply;
+}

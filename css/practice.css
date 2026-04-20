@@ -1,62 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 body {
-  background-color: #222222;
-  margin: 0%;
-  padding: 0%;
+  background-color: rgb(169, 169, 169);
 }
 
-.section {
-  width: 300px;
-  height: 300px;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  box-sizing: content-box;
+h1 {
+  color: #86BADA;
 }
 
-.menu_bar {
-  width: 100%;
-  height: 70px;
-  background-color: white;
-  box-sizing: border-box; /*테두리와 패팅을 너비에 포함 */
-  display: flex;
-  position: fixed;
-
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 30px;
 }
 
-#orderList {
-  position: absolute;
-  top: 10%;
-  left: 70%;   
-  border-radius: 20px;
+/* nav ul {
+  text-align: center;
+} */
 
+.part {
   width: 400px;
-  height: 650px;
-  border: 1px solid #C1C6C8; 
-  box-shadow: 0px 1px 9px 5px #2898ee;
+  height: 120px;
+  background-color: white;
+  display: flow-root; /* 자식이 못나가게 설정 */
 }
 
-#make_order {
-  position: absolute;
-  top: 81.8%;
-  left: 52%;
-  
-  width: 230px;
-  height: 70px;
-  border-radius: 20px;
-  border: 1px solid #C1C6C8; 
-  /* box-shadow: 0px 1px 7px 1px #2898ee; */
-  box-shadow: 0px 1px 9px 2px #2898ee;
+.part h1 {
+  margin: 0px;
 }
 
-#get_order {
-  position: absolute;
-  top: 68.8%;
-  left: 52%;
-  
-  width: 230px;
-  height: 70px;
-  border-radius: 20px;
-  border: 1px solid #C1C6C8; 
-  /* box-shadow: 0px 1px 7px 1px #2898ee; */
-  box-shadow: 0px 1px 9px 2px #2898ee;
+#danmalgi_black {
+  margin: 30px 0 0 20px; 
+  width: 300px;
+  height:50px;
+  background-color: black;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0px 0px 20px 2px gray;
+}
+
+#danmalgi_white {
+  margin: 10px;
+}
+
+.part h1 {
+  margin: 0px;
+}
+
+nav ul {
+  margin-left:20px;
 }

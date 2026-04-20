@@ -169,13 +169,13 @@ a {
 
 
 
-#view {
+.view {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#info {
+.info {
   font-size: 15px;
   margin-bottom: 20px;
 }

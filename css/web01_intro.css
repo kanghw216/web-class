@@ -1,37 +1,39 @@
+/* --- 전체 및 배경 스타일 --- */
 body {
-    background-color : ivory;
+    background-color: ivory;     /* 페이지 전체 배경색: 아이보리 */
 }
 
 * {
-font-family: '필기체';
+    font-family: '필기체';        /* 모든 요소에 '필기체' 폰트 적용 */
 }
 
-
+/* --- 텍스트 강조 및 정렬 --- */
 .accent {
-    background-color: white;
-}
-
-#margin_top {
-    margin-top: 60px;
-    color: blue !important;
+    background-color: white;     /* 강조 클래스 배경색: 흰색 */
 }
 
 h1, p {
-    text-align: center;
+    text-align: center;          /* 제목과 문단을 중앙 정렬 */
+}
+
+/* --- 마진 및 우선순위 테스트 --- */
+#margin_top {
+    margin-top: 60px;            /* 상단 여백 60px */
+    color: blue !important;      /* [중요] 아래에 red가 선언되어도 !important 때문에 파란색 유지 */
 }
 
 #margin_top {
-    color: red;
+    color: red;                  /* 위에서 !important를 썼기 때문에 이 코드는 무시됨 */
 }
 
+/* --- 리스트(List) 스타일 --- */
 .licence {
-    list-style-type: none;
-    list-style-position: inside;
-    padding-left: 10px;
+    list-style-type: none;       /* 불렛 기호(점) 제거 */
+    list-style-position: inside; /* 불렛 위치를 안쪽으로 설정 */
+    padding-left: 10px;          /* 왼쪽 여백 설정 */
 }
 
 #profile {
-    list-style-position: inside;
-    list-style-type: upper-roman;
+    list-style-position: inside; /* 불렛 위치를 안쪽으로 설정 */
+    list-style-type: upper-roman; /* 불렛 기호를 대문자 로마자(I, II, III...)로 설정 */
 }
-

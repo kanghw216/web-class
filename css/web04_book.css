@@ -6,165 +6,141 @@
 }
 
 h1 {
-  font-family: A2z;
-
+    font-family: A2z;
 }
 
+/* --- 레이아웃 및 헤더 --- */
 #head {
-  text-align: center;
-  background-color: #C1C6C8;
-  padding: 10px;
+    text-align: center;
+    background-color: #C1C6C8;
+    padding: 10px;
 }
 
+#main {
+    text-align: center;
+    /* [참고] 기존에 java.png 배경을 고정(fixed)하고 위치를 조절하려던 설정이 있었습니다. */
+    /* background: url("../images/java.png") no-repeat 30% 20% fixed; */
+}
+
+/* --- 섹션 및 박스 스타일 --- */
 .section {
-  width: 300px;
-  height: 400px;
-  border: 1px solid #C1C6C8;
-  margin: 20px;
-  padding: 10px;
-  box-sizing: content-box;
-  box-shadow: 3px 3px 5px 3px #C1C6C8;
-  border-radius: 20px;
-  display: inline-block;
-  vertical-align: top;
-  
+    width: 300px;
+    height: 400px;
+    border: 1px solid #C1C6C8;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: content-box;
+    box-shadow: 3px 3px 5px 3px #C1C6C8;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .section1 {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  margin: 20px auto;
-  padding: 10px;
-  box-sizing: content-box;
-  box-shadow: 3px 3px 5px 3px #C1C6C8;
-  border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: content-box;
+    box-shadow: 3px 3px 5px 3px #C1C6C8;
+    border-radius: 50%; /* 박스를 완전한 원형으로 만듦 */
 }
 
+/* --- 이미지 관련 설정 --- */
 .image {
-  width: 200px;
-  height: 200px;
-  border: 1px solid gray;
-  /* border-style: dashed dotted; */
-  /* border-top-style: dashed; */
-  /* border-color:red orange  ; */
-  /* border-bottom-color: orange; */
-  /* border-width: 3px 6px; */
-  border-radius: 50%;
-  /* border-top-left-radius: 20px; */
-  margin: 0px auto;
-  padding: 10px;
-  /* background-color: whitesmoke;
-  background-size: cover; */
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 0px auto;
+    padding: 10px;
+    /* [기존 시도] 테두리 스타일(점선), 색상(빨강/주황), 배경색 등을 테스트했던 흔적입니다. */
+    /* border-style: dashed dotted; border-top-style: dashed; */
+    /* border-color: red orange; border-bottom-color: orange; border-width: 3px 6px; */
 }
 
-
-
-#cleancode {
-  /* margin: 10px 20px; */
-  background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
-  /* float: left; */
-}
-
-#yibangin {
-  /* margin:10px 20px 30px; */
-  background: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
-  /* float: left; */
-}
-
-#tenThink {
-  /* margin: 10px 20px 30px 40px; */
-  background: linear-gradient(to right bottom, rgb(20, 148, 246),rgb(255, 250, 187));
-  /* clear: both; */
-}
-
-#grad_test {
-  background: radial-gradient(circle at 30% 30% , white, blue)
-}
-
-.book_title {
-  text-align: center;
-  background-color: orange;
-  padding: 10px;
-}
-
+/* 개별 도서 이미지 배경 설정 */
 #cleancode_img {
-  /* background-clip: border-box; */
-  background: url(../images/cleancode.jpg);
-  background-size: cover;
-  /* background-origin: border-box;
-  background-repeat: no-repeat; */
-  
+    background: url(../images/cleancode.jpg);
+    background-size: cover;
+    /* [참고] 배경이 그려지는 기준(clip, origin)을 설정하려던 흔적입니다. */
+    /* background-clip: border-box; background-origin: border-box; */
 }
 
 #yibangin_img {
-  /* background-clip: padding-box; */
-  background: url(../images/YibangIn.jpg);
-  background-size: cover;
-  /* background-origin: padding-box;
-  background-repeat: no-repeat; */
+    background: url(../images/YibangIn.jpg);
+    background-size: cover;
+    /* [참고] 패딩 영역까지 배경을 채우려던 설정입니다. */
+    /* background-clip: padding-box; background-origin: padding-box; */
 }
 
 #tenThink_img {
-  /* background-clip: content-box; */
-  background: url(../images/tenThink.jpg);
-  background-size: cover;
-  /* background-origin: padding-box;
-  background-repeat: no-repeat; */
+    background: url(../images/tenThink.jpg);
+    background-size: cover;
+    /* [참고] 콘텐츠 영역 안에만 배경을 넣으려던 설정입니다. */
+    /* background-clip: content-box; background-origin: padding-box; */
 }
 
-/* #main {
-  background: url("../images/java.png") no-repeat 30% 20% fixed ;
-  background-size:;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 20% 30%;
-} */
+/* --- 배경 그라데이션 --- */
+#cleancode {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+    /* [참고] 요소를 왼쪽으로 띄우려던 설정입니다. (float: left;) */
+}
 
-#main {
-  text-align: center;
+#yibangin {
+    background: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    /* [참고] 여백을 상/중/하 다르게 주려던 흔적입니다. (margin: 10px 20px 30px;) */
+}
+
+#tenThink {
+    background: linear-gradient(to right bottom, rgb(20, 148, 246), rgb(255, 250, 187));
+    /* [참고] float 영향을 해제하려던 설정입니다. (clear: both;) */
+}
+
+#grad_test {
+    background: radial-gradient(circle at 30% 30%, white, blue);
+}
+
+/* --- 도서 정보 텍스트 --- */
+.book_title {
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
 }
 
 .book_dec {
-  font-size: 14px;
+    font-size: 14px;
 }
 
-#nav > ul {
-  list-style: none;
-}
-
+/* --- 네비게이션 (메뉴) 스타일 --- */
+#nav { text-align: center; }
+#nav > ul { list-style: none; padding: 0; }
 #nav ul li {
-  display: inline-block;
-  border: 1px solid black;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-}
-
-#nav {
-  text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
-  display: block;
+    text-decoration: none;
+    color: black;
+    display: block;
 }
 
-/* #nav a:link {
-  background-color: #C1C6C8;
-}
-#nav a:visited {
-  background-color: yellow;
-} */
+/* [참고] 방문 전/후 링크 색상을 바꾸려던 설정입니다. */
+/* #nav a:link { background-color: #C1C6C8; } */
+/* #nav a:visited { background-color: yellow; } */
 
 #nav a:hover {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
 
 #nav a:active {
-  background-color: yellow;
-  color: white;
+    background-color: yellow;
+    color: white;
 }

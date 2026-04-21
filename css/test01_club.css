@@ -1,4 +1,4 @@
-.front_text {
+/* .front_text {
     text-align: center;
     color: white;
     line-height: 70px;
@@ -12,7 +12,6 @@ table {
 }
 
 td, th {
-    /* width: 300px; */
     height: 40px;
     border: 2px solid black;
     text-align: center;
@@ -37,18 +36,6 @@ button {
     color: white;
     
 }
-/* 
-button {
-    width: 150px;
-    height: 50px;
-    font-size: 13px;
-    margin-right: 20px;
-    background-color: rgb(207, 107, 0);
-    border: none;
-    border-radius: 15px;
-    font-weight: bold;
-    color: white;
-} */
 
 form {
     line-height: 2;
@@ -69,4 +56,73 @@ textarea {
     font-weight: bold;
     
 }
+ */
 
+ /* --- 공통 레이아웃 및 텍스트 스타일 --- */
+.front_text {
+    text-align: center;         /* 텍스트 중앙 정렬 */
+    color: white;               /* 글자색: 흰색 */
+    line-height: 70px;          /* 줄 높이 (높이감 형성) */
+    background-color: rgb(87, 87, 255); /* 배경색: 파란색 계열 */
+}
+
+.mainText {
+    font-size: 25px;            /* 글자 크기 확대 */
+    font-weight: bold;          /* 글자 굵게 */
+}
+
+/* --- 테이블 (Table) 스타일 --- */
+table {
+    border-collapse: collapse;  /* 테두리 사이 간격 제거 */
+    width: 1000px;              /* 테이블 너비 고정 */
+    margin: 0px auto;           /* 화면 중앙 정렬 */
+}
+
+td, th {
+    /* width: 300px; */         /* 너비 설정 비활성화 상태 */
+    height: 40px;               /* 셀 높이 */
+    border: 2px solid black;    /* 검은색 테두리 */
+    text-align: center;         /* 셀 내부 텍스트 중앙 정렬 */
+    font-size: 20px;            /* 셀 내부 글자 크기 */
+}
+
+th {
+    color: white;               /* 제목 셀 글자색: 흰색 */
+    background-color: rgb(87, 87, 255); /* 제목 셀 배경색 */
+}
+
+/* --- 폼 (Form) 및 입력 요소 스타일 --- */
+form {
+    line-height: 2;             /* 입력 요소 간 줄 간격 확보 */
+}
+
+fieldset {
+    width: 500px;               /* 그룹 영역 너비 제한 */
+    margin-bottom: 20px;        /* 하단 요소와의 간격 */
+}
+
+textarea {
+    resize: none;               /* 사용자의 크기 조절 비활성화 */
+    vertical-align: top;        /* 라벨과 상단 정렬 맞춤 */
+}
+
+/* --- 버튼 (Button) 스타일 --- */
+button {
+    width: 150px;               /* 버튼 너비 */
+    height: 50px;               /* 버튼 높이 */
+    font-size: 13px;            /* 버튼 글자 크기 */
+    margin-right: 20px;         /* 우측 여백 */
+    background-color: rgb(87, 87, 255); /* 버튼 배경색 */
+    border: none;               /* 기본 테두리 제거 */
+    border-radius: 15px;        /* 모서리 둥글게 */
+    font-weight: bold;          /* 글자 굵게 */
+    color: white;               /* 글자색: 흰색 */
+    cursor: pointer;            /* 마우스 오버 시 포인터 표시 (추천 속성) */
+}
+
+/* 
+기존 오렌지색 버튼 설정 (주석 처리됨)
+button {
+    background-color: rgb(207, 107, 0);
+} 
+*/

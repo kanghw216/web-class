@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,7 +35,6 @@ body {
 .part {
   width: 300px;
   height: 500px;
-  /* border: 1px solid black; */
   display: inline-block;
   margin: 0px 30px;
   background-color: white;
@@ -212,4 +211,155 @@ button {
 .itemTitle a:hover {
   color: rgb(134, 134, 134);
 }
+ */
 
+ /* --- [1] 기본 초기화 (Reset) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* 고정된 파스텔톤 배경 그라데이션 */
+    background: linear-gradient(120deg, #fff5f2 0%, #fdf2f8 50%, #eff6ff 100%);
+    background-attachment: fixed;
+    color: #1e293b;
+}
+
+/* --- [2] 헤더 및 네비게이션 --- */
+#head {
+    text-align: center;
+    /* 화려한 3색 선형 그라데이션 */
+    background: linear-gradient(to left, #ff9728, #e14da8, #0068d7);
+    color: white;
+    padding: 10px;
+}
+
+#nav ul, li {
+    display: inline-block; /* 가로 배치 */
+    list-style: none;
+}
+
+#nav li {
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: 1px solid white; /* 하단 언더라인 효과 */
+    color: white;
+}
+
+/* 네비게이션 호버 효과 (노란색 강조) */
+#nav li:hover { border-color: rgb(255, 225, 0); }
+#nav a:hover { color: rgb(255, 225, 0); }
+
+/* --- [3] 레이아웃 및 섹션 --- */
+.section {
+    text-align: center; /* 내부 콘텐츠 중앙 정렬 */
+}
+
+.part {
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+    margin: 0px 30px;
+    background-color: white;
+    vertical-align: top; /* 콘텐츠 높이가 달라도 상단 기준 정렬 */
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 카테고리별 제목 색상 설정 (다크 블루 계열) */
+#musical, #concert, #play, #exhibition {
+    color: #1e293b;
+}
+
+/* --- [4] 아이템 상세 정보 (텍스트) --- */
+.itemTitle {
+    text-align: left;
+    font-size: 17px;
+    padding: 12px 0px 0px 10px;
+}
+
+.itemTitle a {
+    color: black;
+    text-decoration: none;
+}
+
+.itemTitle a:hover {
+    color: rgb(134, 134, 134); /* 호버 시 회색으로 변경 */
+}
+
+.itemIntro {
+    color: rgb(157, 157, 157); /* 설명글은 연한 회색 */
+    text-align: left;
+    font-size: 12px;
+    padding: 0px 0px 0px 10px;
+}
+
+.view { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+.info { font-size: 15px; margin-bottom: 20px; }
+
+/* --- [5] 콘텐츠 사진 (공통 속성 및 개별 배경) --- */
+.photo {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 개별 배경 이미지 설정 (뮤지컬, 콘서트, 연극, 전시) */
+#day    { background: url(../images/mu_day.gif); background-size: cover; }
+#death  { background: url(../images/mu_death.gif); background-size: cover; }
+#kinky  { 
+    background: url(../images/mu_kinky.gif); 
+    background-size: cover; 
+    filter: grayscale(100%) blur(5px); /* 흑백 처리 및 블러(흐림) 효과 */
+}
+#BTS    { background: url(../images/con_bts.jpg); background-size: cover; }
+#sung   { background: url(../images/con_sung.gif); background-size: cover; }
+#SMM    { background: url(../images/con_showmethemoney.jpg); background-size: cover; }
+#se     { background: url(../images/play_se.gif); background-size: cover; }
+#or     { background: url(../images/play_or.gif); background-size: cover; }
+#ba     { background: url(../images/play_ba.gif); background-size: cover; }
+#room   { background: url(../images/art_room.gif); background-size: cover; }
+#wally  { background: url(../images/art_wally.gif); background-size: cover; }
+#chusa  { background: url(../images/art_chusa.gif); background-size: cover; }
+
+/* --- [6] 폼 및 버튼 스타일 --- */
+form { line-height: 2; }
+
+fieldset {
+    background-color: white;
+    width: 500px;
+}
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    /* 헤더와 통일감을 주는 그라데이션 배경 */
+    background: linear-gradient(to left, #ff9728, #e14da8, #0068d7);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* --- [7] 기타 링크 공통 --- */
+a {
+    text-decoration: none;
+    color: white;
+    forced-color-adjust: black; /* 고대비 모드에서도 색상 유지 시도 */
+}

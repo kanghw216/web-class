@@ -4,6 +4,11 @@
 }
 body {
   background-color: rgb(169, 169, 169);
+  margin: 0;
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;     /* 세로 중앙 */
+  min-height: 100vh;       /* 화면 전체 높이 사용 */
 }
 
 h1 {
@@ -21,8 +26,8 @@ nav ul li {
 } */
 
 .part {
-  width: 400px;
-  height: 120px;
+  width: 700px;
+  height: 240px;
   background-color: white;
   display: flow-root; /* 자식이 못나가게 설정 */
 }
@@ -32,17 +37,25 @@ nav ul li {
 }
 
 #danmalgi_black {
-  margin: 30px 0 0 20px; 
-  width: 300px;
-  height:50px;
+  margin: 85px 0 0 40px; 
+  width: 500px;
+  height:120px;
   background-color: black;
   text-align: center;
-  line-height: 50px;
+  line-height: 120px;
   box-shadow: 0px 0px 20px 2px gray;
+  position: absolute;
+
+  display: flex;           /* 자식들을 플렉스 아이템으로 설정 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center;     /* 세로 중앙 정렬 */
+
 }
 
-#danmalgi_white {
+#danmalgi_background {
   margin: 10px;
+  position: relative;
+  box-shadow: 0px 0px 20px 2px gray;
 }
 
 .part h1 {
@@ -50,5 +63,64 @@ nav ul li {
 }
 
 nav ul {
-  margin-left:20px;
+  margin-left: 40px;
+  margin-top: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  forced-color-adjust:none;
+}
+
+#danmalgi_gray_one {
+  background-color: gray;
+  height: 40px;
+  position: absolute;
+}
+
+#danmalgi_gray_two {
+  background-color: gray;
+  width: 40px;
+  height: 100px;
+  right: 0;
+  position: absolute;
+
+}
+
+
+#danmalgi_white_one {
+  background-color: rgb(255, 255, 255);
+  width: 698px;
+  height: 10px;
+  bottom: 0;
+  position: absolute;
+  border-bottom: 1px solid black;
+  border: 1px solid black;
+}
+
+#danmalgi_white_two {
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 189px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 11px ;
+  border: 1px solid black;
+    border-bottom: none;
+  border-top: none;
+}
+
+#danmalgi_white_three {
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 130px;
+  margin-bottom: 11px ;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border: 1px solid black;
+  border-bottom: none;
+  border-top: none;
 }

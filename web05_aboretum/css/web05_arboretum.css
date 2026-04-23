@@ -120,11 +120,11 @@ footer {
 }
 
 .small_info {
-  padding-top: 70px;
-  font-size: 20px;
+  padding-top: 200px;
+  font-size: 40px;
 
-  font-weight: 600;
-  color: white;
+  font-weight: bold;
+  color: white
 }
 
 #bg2 {

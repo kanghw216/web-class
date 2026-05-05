@@ -144,3 +144,18 @@ a {
     background-color: yellow;
     color: white;
 }
+
+#cleancode:hover {
+    filter:blur(2px);
+}
+
+#yibangin:hover {
+    filter: sepia(50%);
+}
+
+#tenThink:hover {
+    filter:saturate(-200%)
+    /* filter:brightness(1.12); */
+    /* filter: contrast(1.2) ; */
+    /* filter: drop-shadow(3px 3px 5px black); */
+}

@@ -54,7 +54,7 @@ nav ul li:hover {
   background-color: #C1C6C8;
 }
 
-a {
+li a{
   text-decoration: none;
   color:black; /* 링크 파란색 밑줄, 파란색 글씨 바꾸기 */
   display: block;
@@ -112,19 +112,21 @@ footer {
   vertical-align: top;
 }
 .small_title {
-  padding-top: 200px;
+  padding-top: 180px;
   font-size: 40px;
 
   font-weight: bold;
-  color: white
+  color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
 .small_info {
-  padding-top: 200px;
-  font-size: 40px;
+  padding-top: 100px;
+  font-size: 20px;
 
   font-weight: bold;
-  color: white
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 #bg2 {

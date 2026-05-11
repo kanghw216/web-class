@@ -33,11 +33,35 @@ h3 {
   height: 500px;
 }
 
+.ex_info {
+  line-height: 2;
+}
+
 .tag_ing {
-  background-color: #C1C6C8;
+  background-color: #35c9ff;
   border-radius: 50px;
   padding: 5px;
-  
+
   color: black;
   font-weight: bold;
 }
+
+.tag_end {
+  background-color: #C1C6C8;
+  border-radius: 50px;
+  padding: 5px;
+
+  color: black;
+  font-weight: bold;
+}
+
+.ex_list {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row wrap;
+  justify-content: center;
+  border-top: 1px solid;
+  width: 100%;
+}
+

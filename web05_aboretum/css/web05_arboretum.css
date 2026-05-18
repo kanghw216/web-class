@@ -149,3 +149,15 @@ footer {
 
   background-blend-mode: multiply;
 }
+
+@media screen and (max-width:1024px) {
+  nav ul li {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .submenu {
+  position: static;
+  }
+  
+}

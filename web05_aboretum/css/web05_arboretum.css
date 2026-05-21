@@ -16,10 +16,10 @@ header {
 
 h1 {
   font-family: SongamLeeHyeongSik;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
-#logo {
+.logo {
   width: 30px;
 }
 
@@ -160,4 +160,52 @@ footer {
   position: static;
   }
   
+}
+
+#head {
+  display: flex;
+  height: 80px;
+  font-size: 18px;
+  line-height: 80px;
+  gap: 10px;
+
+  justify-content: right;
+}
+
+#sear {
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;;
+  border: 1px rgb(2, 138, 43) solid
+}
+/* 
+.h_box {
+  flex-basis: 300px;
+} */
+
+#h_box1 {
+  margin-right: auto;
+}
+
+#h_box2 {
+  align-self: flex-start
+}
+/* 
+#h_box3 {
+  flex-shrink: 0;
+} */
+
+#h_box4 {
+  /* flex-grow: 2;
+  flex-shrink: 2; */
+  margin-right: 20px;
+}
+
+@media screen and (max-width:768px) {
+  #h_box2 , #h_box3{
+    display: none;
+  }
+  /* #h_box3 {
+    display: none;
+  } */
 }

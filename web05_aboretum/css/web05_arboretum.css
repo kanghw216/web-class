@@ -60,7 +60,7 @@ li a{
   display: block;
 }
 
-li {
+nav ul li {
   font-size: 17px;
   width: 200px;
   height: 40px;

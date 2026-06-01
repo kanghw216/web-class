@@ -1,0 +1,57 @@
+#img_spring {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/spring/img_season1.jpg);
+  background-size: cover;
+  filter: saturate(80%);
+
+  display: flex;
+  align-items: flex-end;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  position: relative;
+
+}
+
+#img_spring ul li {
+  display: inline-block;
+
+  width: 200px;
+  height: 50px;
+  line-height: 50px; /* 높이랑 같게 설정하면 글자가 중앙으로 옴 */
+  text-align: center;
+}
+
+#spring_title {
+  color: white;
+  text-shadow: 4px 4px 2px gray;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%; 
+  left: 50%;
+
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+
+#nav_season {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#nav_season a {
+  color: white;
+  font-size: 1.2rem;
+
+}
+
+#nav_season ul{
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav_season ul a:hover {
+  font-size: 1.5rem;
+}

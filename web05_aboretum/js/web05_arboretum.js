@@ -16,3 +16,4 @@ let join = document.querySelector("#h_box3");
 
 document.write("<b>"+name+"</b>이군요<br>");
 console.log("<b>"+name+"</b>이군요, 반갑습니다.<br>")
+

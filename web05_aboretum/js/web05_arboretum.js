@@ -13,7 +13,13 @@ let join = document.querySelector("#h_box3");
 // confirm("로그아웃하시겠습니까?");
 
 // let name = prompt("당신의 이름은 무엇입니까?");
+// document.write("<b>"+name+"</b>이군요<br>");
+// console.log("<b>"+name+"</b>이군요, 반갑습니다.<br>")
 
-document.write("<b>"+name+"</b>이군요<br>");
-console.log("<b>"+name+"</b>이군요, 반갑습니다.<br>")
+function ChangeBg(color) {
+  document.querySelector("#sear");
+}
 
+function BackBg(color) {
+
+}

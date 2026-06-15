@@ -17,9 +17,11 @@ let join = document.querySelector("#h_box3");
 // console.log("<b>"+name+"</b>이군요, 반갑습니다.<br>")
 
 function ChangeBg(color) {
-  document.querySelector("#sear");
+  let inputBg1 = document.querySelector("#sear");
+  inputBg1.style.backgroundColor =  color;
 }
 
 function BackBg(color) {
-
+  let inputBg2 = document.getElementById("sear")
+  inputBg2.style.backgroundColor = color;
 }
